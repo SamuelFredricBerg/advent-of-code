@@ -38,7 +38,7 @@ public class Day1 {
             }
         }
 
-        System.out.println("Final Floor: " + floor);
+        System.out.println("(Part 1): Final Floor: " + floor);
     }
 
     private static void solvePart2(List<String> lines) {
@@ -57,7 +57,7 @@ public class Day1 {
 
                 if (floor < 0 && !basementReached) {
                     basementReached = true;
-                    System.out.println("Position of first entry to basement: " + position);
+                    System.out.println("(Part 2): Position of first entry to basement: " + position);
                     return;
                 }
             }

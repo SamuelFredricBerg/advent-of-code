@@ -31,7 +31,7 @@ public class DayX {
 
         }
 
-        System.out.println("");
+        System.out.println("(Part 1): : ");
     }
 
     private static void solvePart2(List<String> lines) {
@@ -40,6 +40,6 @@ public class DayX {
 
         }
 
-        System.out.println("");
+        System.out.println("(Part 2): : ");
     }
 }

@@ -37,17 +37,25 @@ public class Day3 {
 
             for (char move : line.toCharArray()) {
                 switch (move) {
-                    case '^' -> y++;
-                    case 'v' -> y--;
-                    case '>' -> x++;
-                    case '<' -> x--;
+                    case '^':
+                        y++;
+                        break;
+                    case 'v':
+                        y--;
+                        break;
+                    case '>':
+                        x++;
+                        break;
+                    case '<':
+                        x--;
+                        break;
                 }
 
                 visited.add(x + "," + y);
             }
         }
 
-        System.out.println("Visited once or more: " + visited.size());
+        System.out.println("(Part 1): Visited once or more: " + visited.size());
     }
 
     private static void solvePart2(List<String> lines) {
@@ -55,11 +63,8 @@ public class Day3 {
 
         for (String line : lines) {
             int turn = 0;
-            // Santa
             int x0 = 0;
             int y0 = 0;
-
-            // Robo-Santa
             int x1 = 0;
             int y1 = 0;
 
@@ -101,6 +106,6 @@ public class Day3 {
             }
         }
 
-        System.out.println("Visited once or more: " + visited.size());
+        System.out.println("(Part 2): Visited once or more: " + visited.size());
     }
 }

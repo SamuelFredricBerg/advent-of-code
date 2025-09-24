@@ -44,7 +44,7 @@ public class Day4 {
                         sb.append(String.format("%02x", b));
 
                     if (sb.toString().startsWith("00000")) {
-                        System.out.println("Found: " + testString + " -> " + sb.toString());
+                        System.out.println("(Part 1): Found: " + testString + " -> " + sb.toString());
                         break;
                     }
 
@@ -70,7 +70,7 @@ public class Day4 {
                         sb.append(String.format("%02x", b));
 
                     if (sb.toString().startsWith("000000")) {
-                        System.out.println("Found: " + testString + " -> " + sb.toString());
+                        System.out.println("(Part 2): Found: " + testString + " -> " + sb.toString());
                         break;
                     }
 

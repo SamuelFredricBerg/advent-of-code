@@ -26,7 +26,6 @@ public class Day2 {
     }
 
     private static void solvePart1(List<String> lines) {
-        // 2*l*w + 2*w*h + 2*h*l
         int totalArea = 0;
 
         for (String line : lines) {
@@ -44,7 +43,7 @@ public class Day2 {
             totalArea += 2 * (area1 + area2 + area3) + minArea;
         }
 
-        System.out.println("Total area: " + totalArea);
+        System.out.println("(Part 1): Total area: " + totalArea);
     }
 
     private static void solvePart2(List<String> lines) {
@@ -72,6 +71,6 @@ public class Day2 {
                 totalRibbon += 2 * (h + w) + bow;
         }
 
-        System.out.println("Total ribbon: " + totalRibbon);
+        System.out.println("(Part 2): Total ribbon: " + totalRibbon);
     }
 }

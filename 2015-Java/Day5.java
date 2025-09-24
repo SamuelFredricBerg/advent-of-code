@@ -30,9 +30,9 @@ public class Day5 {
         int niceCount = 0;
 
         for (String line : lines) {
-            if (line.contains("ab") || line.contains("cd") || line.contains("pq") || line.contains("xy")) {
+            if (line.contains("ab") || line.contains("cd") || line.contains("pq") || line.contains("xy"))
                 isNice = false;
-            } else {
+            else {
                 int vowelCount = 0;
                 boolean hasDoubleLetter = false;
 
@@ -58,7 +58,7 @@ public class Day5 {
             }
         }
 
-        System.out.println("Number of nice strings (Part 1): " + niceCount);
+        System.out.println("(Part 1): Number of nice strings: " + niceCount);
     }
 
     private static void solvePart2(List<String> lines) {
@@ -66,32 +66,10 @@ public class Day5 {
         boolean hasRepeat;
         int niceCount = 0;
 
-        /**
-         * Now, a nice string is one with all of the following properties:
-         *
-         * It contains a pair of any two letters that appears at least twice in the
-         * string without overlapping, like xyxy (xy) or aabcdefgaa (aa), but not like
-         * aaa (aa, but it overlaps).
-         * It contains at least one letter which repeats with exactly one letter between
-         * them, like xyx, abcdefeghi (efe), or even aaa.
-         *
-         * For example:
-         *
-         * qjhvhtzxzqqjkmpb is nice because is has a pair that appears twice (qj) and a
-         * letter that repeats with exactly one letter between them (zxz).
-         * xxyxx is nice because it has a pair that appears twice and a letter that
-         * repeats with one between, even though the letters used by each rule overlap.
-         * uurcxstgmygtbstg is naughty because it has a pair (tg) but no repeat with a
-         * single letter between them.
-         * ieodomkazucvgmuy is naughty because it has a repeating letter with one
-         * between (odo), but no pair that appears twice.
-         *
-         */
         for (String line : lines) {
             hasPair = false;
             hasRepeat = false;
 
-            // Check for pairs
             for (int i = 0; i < line.length() - 1; i++) {
                 String pair = line.substring(i, i + 2);
                 if (line.indexOf(pair, i + 2) != -1) {
@@ -100,7 +78,6 @@ public class Day5 {
                 }
             }
 
-            // Check for repeating letters with one in between
             for (int i = 0; i < line.length() - 2; i++) {
                 if (line.charAt(i) == line.charAt(i + 2)) {
                     hasRepeat = true;
@@ -114,6 +91,6 @@ public class Day5 {
 
         }
 
-        System.out.println("Number of nice strings (Part 2): " + niceCount);
+        System.out.println("(Part 2): Number of nice strings: " + niceCount);
     }
 }
