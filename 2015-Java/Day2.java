@@ -20,10 +20,6 @@ public class Day2 {
             return;
         }
 
-        // for (String line : lines) {
-        // System.out.println(line);
-        // }
-
         solvePart1(lines);
 
         solvePart2(lines);

@@ -20,10 +20,6 @@ public class DayX {
             return;
         }
 
-        // for (String line : lines) {
-        // System.out.println(line);
-        // }
-
         solvePart1(lines);
 
         solvePart2(lines);
@@ -31,10 +27,18 @@ public class DayX {
 
     private static void solvePart1(List<String> lines) {
 
+        for (String line : lines) {
+
+        }
+
         System.out.println("");
     }
 
     private static void solvePart2(List<String> lines) {
+
+        for (String line : lines) {
+
+        }
 
         System.out.println("");
     }
