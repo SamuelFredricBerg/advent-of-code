@@ -14,7 +14,7 @@ import sys
 # 3) Refresh
 # 5) Click https://adventofcode.com under "Cookies"
 # 6) Grab the value for session. Fill it in.
-SESSION = "<FILL_ME_IN>"
+SESSION = "SESSION-Token-Here"
 
 useragent = "https://github.com/jonathanpaulson/AdventOfCode/blob/master/get_input.py by jonathanpaulson@gmail.com"
 parser = argparse.ArgumentParser(description="Read input")
